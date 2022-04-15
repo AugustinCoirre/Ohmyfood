@@ -76,8 +76,9 @@ header img {
 }
 
 .fonctionnement .title_fonctionnement {
-  padding: 30px 0px 20px 20px;
+  padding: 50px 0px 20px 20px;
   font-size: 20px;
+  font-weight: bold;
 }
 .fonctionnement p {
   font-weight: bold;
@@ -95,7 +96,7 @@ header img {
   padding-left: -200px;
 }
 .fonctionnement div i {
-  font-size: 25px;
+  font-size: 20px;
   color: gray;
 }
 .fonctionnement div .fa-house {
@@ -113,6 +114,63 @@ header img {
 }
 .fonctionnement .fonctionnement_select {
   background-color: #efe8f8;
+}
+
+.restaurant {
+  background-color: #f6f6f6;
+}
+.restaurant .title_restaurant {
+  padding: 50px 0px 20px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.section_card_restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.card-restaurant {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+  width: 90%;
+}
+.card-restaurant .card-image-restaurant {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+.card-restaurant .card-image-restaurant img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.card-restaurant .card-body-restaurant {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+}
+.card-restaurant .card-body-restaurant .card-title-restaurant {
+  color: black;
+}
+.card-restaurant .card-body-restaurant .card-title-restaurant h3 {
+  margin: 0;
+  text-decoration: none;
+}
+.card-restaurant .card-body-restaurant .card-like-restaurant {
+  margin-right: 10px;
+}
+.card-restaurant .card-body-restaurant .card-like-restaurant i {
+  font-size: 20px;
 }
 
 footer {

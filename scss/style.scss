@@ -96,8 +96,9 @@ header {
 
 .fonctionnement {
   .title_fonctionnement {
-    padding: 30px 0px 20px 20px;
+    padding: 50px 0px 20px 20px;
     font-size: 20px;
+    font-weight: bold;
   }
   p {
     font-weight: bold;
@@ -114,7 +115,7 @@ header {
     box-shadow: 3px 3px 12px #dfd8d8;
     padding-left: -200px;
     i {
-      font-size: 25px;
+      font-size: 20px;
       color: gray;
     }
     .fa-house {
@@ -133,6 +134,67 @@ header {
   }
   .fonctionnement_select {
     background-color: #efe8f8;
+  }
+}
+
+// restaurant
+
+.restaurant {
+  background-color: #f6f6f6;
+  .title_restaurant {
+    padding: 50px 0px 20px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+  }
+}
+
+.section_card_restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+// card restaurant
+.card-restaurant {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+  width: 90%;
+  .card-image-restaurant {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  .card-body-restaurant {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    .card-title-restaurant {
+      color: black;
+      h3 {
+        margin: 0;
+        text-decoration: none;
+      }
+    }
+    .card-like-restaurant {
+      margin-right: 10px;
+      i {
+        font-size: 20px;
+      }
+    }
   }
 }
 
