@@ -16,6 +16,7 @@ $colorprimaire: #9356dc;
 $colorsecondaire: #ff79da;
 $colortertiaire: #99e2d0;
 $colorbackgroundfooter: #353434;
+$colorbackgroundsection: #f6f6f6;
 
 // header
 
@@ -35,6 +36,33 @@ header {
     i {
       font-size: 30px;
       color: gray;
+    }
+  }
+}
+
+// entete menu
+
+.entete_menu {
+  width: 100%;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  div {
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    h3 {
+      margin: 0;
+      font-family: "Shrikhand", sans-serif;
+    }
+    i {
+      color: gray;
+      margin: 15px;
+      font-size: 20px;
     }
   }
 }

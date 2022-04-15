@@ -30,6 +30,31 @@ header a i {
   color: gray;
 }
 
+.entete_menu {
+  width: 100%;
+}
+.entete_menu img {
+  width: 100%;
+  height: auto;
+}
+.entete_menu div {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+}
+.entete_menu div h3 {
+  margin: 0;
+  font-family: "Shrikhand", sans-serif;
+}
+.entete_menu div i {
+  color: gray;
+  margin: 15px;
+  font-size: 20px;
+}
+
 footer {
   background-color: #353434;
   color: white;

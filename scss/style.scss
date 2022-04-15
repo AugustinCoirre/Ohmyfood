@@ -16,6 +16,7 @@ $colorprimaire: #9356dc;
 $colorsecondaire: #ff79da;
 $colortertiaire: #99e2d0;
 $colorbackgroundfooter: #353434;
+$colorbackgroundsection: #f6f6f6;
 
 // header
 
@@ -52,7 +53,7 @@ header {
 // section en-tete et bouton lien menu
 
 .accueil {
-  background-color: #f6f6f6;
+  background-color: $colorbackgroundsection;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -144,7 +145,7 @@ header {
 // restaurant
 
 .restaurant {
-  background-color: #f6f6f6;
+  background-color: $colorbackgroundsection;
   .title_restaurant {
     padding: 50px 0px 20px 20px;
     font-size: 20px;
