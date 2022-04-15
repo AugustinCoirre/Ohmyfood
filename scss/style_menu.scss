@@ -1,0 +1,76 @@
+// Importation librairie - roboto light/regular/bold - Shrikhand
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
+
+html {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+$colorprimaire: #9356dc;
+$colorsecondaire: #ff79da;
+$colortertiaire: #99e2d0;
+$colorbackgroundfooter: #353434;
+
+// header
+
+header {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  box-shadow: 0px 1px 5px #9a9c9c;
+  position: relative;
+  z-index: 1;
+  img {
+    max-width: 50%;
+  }
+}
+
+// footer
+
+footer {
+  background-color: $colorbackgroundfooter;
+  color: white;
+  padding: 10px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  div h3 {
+    font-family: "Shrikhand", sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+    margin-bottom: 10px;
+  }
+  nav {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        display: flex;
+        flex-direction: row;
+        padding: 6px 0px;
+        font-size: 16px;
+        font-weight: 300;
+        i {
+          width: 16px;
+          height: 16px;
+          padding-right: 12px;
+        }
+        p {
+          margin: 0;
+        }
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+}
