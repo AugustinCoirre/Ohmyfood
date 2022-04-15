@@ -95,8 +95,9 @@ header {
 // fonctionnement
 
 .fonctionnement {
+  padding-bottom: 40px;
   .title_fonctionnement {
-    padding: 50px 0px 20px 20px;
+    padding: 40px 0px 20px 20px;
     font-size: 20px;
     font-weight: bold;
   }
@@ -104,13 +105,14 @@ header {
     font-weight: bold;
   }
   div {
+    position: relative;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
     background-color: #f6f6f6;
     border-radius: 20px;
-    padding: 25px 0 25px 10px;
+    padding: 25px 25px 25px 0;
     margin: 10px 20px 20px 40px;
     box-shadow: 3px 3px 12px #dfd8d8;
     padding-left: -200px;
@@ -122,6 +124,8 @@ header {
       color: $colorprimaire;
     }
     span {
+      position: absolute;
+      left: -12px;
       background-color: $colorprimaire;
       border-radius: 20px;
       width: 25px;
@@ -154,7 +158,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 // card restaurant
