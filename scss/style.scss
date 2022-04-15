@@ -161,18 +161,40 @@ header {
 .card-restaurant {
   display: flex;
   justify-content: center;
-  border-radius: 10px;
+  flex-direction: column;
+  border-radius: 15px;
   background-color: white;
   overflow: hidden;
   width: 90%;
+  box-shadow: 2px 2px 10px #bdbebe;
+  margin-bottom: 20px;
+  a {
+    text-decoration: none;
+  }
   .card-image-restaurant {
     height: 200px;
     width: 100%;
     overflow: hidden;
+    position: relative;
     img {
       width: 100%;
       height: auto;
       object-fit: cover;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .encart_nouveau {
+      position: absolute;
+      z-index: 1;
+      top: 15px;
+      right: 15px;
+      color: #239b7e;
+      background-color: #99e2d0;
+      border-radius: 3px;
+      padding: 7px 12px;
+      font-weight: bold;
     }
   }
 
@@ -181,20 +203,42 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 10px;
+    padding: 15px 12px;
     .card-title-restaurant {
       color: black;
       h3 {
         margin: 0;
-        text-decoration: none;
+        padding-bottom: 5px;
+      }
+      p {
+        font-size: 16px;
       }
     }
     .card-like-restaurant {
       margin-right: 10px;
       i {
-        font-size: 20px;
+        font-size: 25px;
+        color: gray;
+      }
+      .like_up {
+        display: none;
+        background: -webkit-linear-gradient(
+          top left,
+          $colorprimaire,
+          $colorsecondaire
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
       }
     }
+  }
+}
+
+// animation like
+.card-like-restaurant {
+  .card-like-restaurant:hover .card-body-restaurant {
+    background-color: red;
   }
 }
 
