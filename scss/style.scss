@@ -241,9 +241,12 @@ header {
 }
 
 // animation like
-.card-like-restaurant {
-  .card-like-restaurant:hover .card-body-restaurant {
-    background-color: red;
+.card-like-restaurant:hover {
+  .like_down {
+    display: none;
+  }
+  .like_up {
+    display: block;
   }
 }
 
