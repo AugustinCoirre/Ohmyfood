@@ -65,6 +65,66 @@ header a i {
   padding-right: 15px;
 }
 
+.menu {
+  background-color: #f6f6f6;
+  margin-top: -22px;
+  width: 100%;
+}
+.menu .element_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+}
+.menu .element_menu h4 {
+  font-weight: 400;
+  padding-bottom: 5px;
+  width: 40px;
+  border-bottom: 4px solid #99e2d0;
+}
+.menu .element_menu .choice_menu {
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 12px;
+  margin-bottom: 15px;
+  box-shadow: 2px 2px 10px #dadbdb;
+  width: 90%;
+}
+.menu .element_menu .choice_menu .title_menu {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.menu .element_menu .choice_menu p {
+  font-weight: lighter;
+}
+.menu .element_menu .choice_menu .price_menu {
+  font-weight: bold;
+}
+
+.section_commander_menu {
+  background-color: #f6f6f6;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0 80px 0;
+}
+.section_commander_menu a {
+  background: linear-gradient(to top left, #9356dc, #ff79da);
+  height: 50px;
+  width: 220px;
+  border-radius: 25px;
+  box-shadow: 2px 2px 10px #9a9c9c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
 footer {
   background-color: #353434;
   color: white;
