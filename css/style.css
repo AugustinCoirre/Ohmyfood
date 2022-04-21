@@ -212,13 +212,6 @@ header img {
   color: transparent;
 }
 
-.card-like-restaurant:hover .like_down {
-  display: none;
-}
-.card-like-restaurant:hover .like_up {
-  display: block;
-}
-
 footer {
   background-color: #353434;
   color: white;
