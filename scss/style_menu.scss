@@ -47,6 +47,9 @@ header {
   height: 270px;
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   img {
     width: 100%;
     height: auto;
@@ -88,6 +91,7 @@ header {
     flex-direction: column;
     justify-content: center;
     margin-left: 15px;
+    width: 90%;
     h4 {
       font-weight: 400;
       padding-bottom: 5px;
@@ -103,16 +107,25 @@ header {
       padding: 12px;
       margin-bottom: 15px;
       box-shadow: 2px 2px 10px #dadbdb;
-      width: 90%;
+      div {
+        width: 90%;
+      }
       .title_menu {
         font-weight: bold;
         padding-bottom: 5px;
+        font-size: 16px;
       }
       p {
         font-weight: lighter;
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 90%;
       }
       .price_menu {
         font-weight: bold;
+        width: 10%;
       }
     }
   }

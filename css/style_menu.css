@@ -35,6 +35,9 @@ header a i {
   height: 270px;
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .entete_menu img {
   width: 100%;
@@ -75,6 +78,7 @@ header a i {
   flex-direction: column;
   justify-content: center;
   margin-left: 15px;
+  width: 90%;
 }
 .menu .element_menu h4 {
   font-weight: 400;
@@ -91,17 +95,26 @@ header a i {
   padding: 12px;
   margin-bottom: 15px;
   box-shadow: 2px 2px 10px #dadbdb;
+}
+.menu .element_menu .choice_menu div {
   width: 90%;
 }
 .menu .element_menu .choice_menu .title_menu {
   font-weight: bold;
   padding-bottom: 5px;
+  font-size: 16px;
 }
 .menu .element_menu .choice_menu p {
   font-weight: lighter;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 90%;
 }
 .menu .element_menu .choice_menu .price_menu {
   font-weight: bold;
+  width: 10%;
 }
 
 .section_commander_menu {
