@@ -38,12 +38,19 @@ header img {
   padding-right: 5px;
 }
 
+.entete-desktop {
+  display: flex;
+  flex-direction: row;
+}
+
 .accueil {
-  background-color: #f6f6f6;
+  background-color: white;
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 40px 0px 50px 0px;
+  width: 50%;
 }
 .accueil div {
   width: 90%;
@@ -77,6 +84,7 @@ header img {
 
 .fonctionnement {
   padding-bottom: 40px;
+  width: 50%;
 }
 .fonctionnement .title_fonctionnement {
   padding: 30px 0px 10px 20px;
@@ -97,7 +105,6 @@ header img {
   padding: 25px 25px 20px 0;
   margin: 10px 20px 20px 40px;
   box-shadow: 3px 3px 12px #dfd8d8;
-  padding-left: -200px;
 }
 .fonctionnement div i {
   font-size: 20px;
