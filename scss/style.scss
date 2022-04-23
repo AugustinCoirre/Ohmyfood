@@ -108,17 +108,18 @@ header {
   div {
     position: relative;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: left;
     align-items: center;
     flex-direction: row;
     background-color: #f6f6f6;
     border-radius: 20px;
-    padding: 25px 25px 20px 0;
-    margin: 10px 20px 20px 40px;
+    padding: 25px 20px 20px 5px;
+    margin: 10px 20px 20px 30px;
     box-shadow: 3px 3px 12px #dfd8d8;
     i {
       font-size: 20px;
       color: gray;
+      padding: 0 25px 0 30px;
     }
     .fa-house {
       color: $colorprimaire;
@@ -186,7 +187,6 @@ header {
     img {
       width: 100%;
       height: auto;
-      object-fit: cover;
       position: absolute;
     }
     .encart_nouveau {
@@ -224,30 +224,9 @@ header {
         font-size: 25px;
         color: gray;
       }
-      .like_up {
-        display: none;
-        background: -webkit-linear-gradient(
-          top left,
-          $colorprimaire,
-          $colorsecondaire
-        );
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-      }
     }
   }
 }
-
-// animation like
-// .card-like-restaurant:hover {
-//   .like_down {
-//     display: none;
-//   }
-//   .like_up {
-//     display: block;
-//   }
-// }
 
 // footer
 
