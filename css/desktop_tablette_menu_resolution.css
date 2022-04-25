@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
+html {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  box-shadow: 0px 1px 5px #9a9c9c;
+  position: relative;
+  z-index: 1;
+}
+header img {
+  max-width: 50%;
+}
+
+.section_position {
+  background-color: #eaeaea;
+  padding: 15px 0px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.section_position i {
+  width: 16px;
+  height: 16px;
+  padding-right: 5px;
+}
+
+.entete-desktop {
+  display: flex;
+  flex-direction: row;
+}
+
+.accueil {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px 50px 0px;
+  width: 50%;
+}
+.accueil div {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-right: 1px solid #9356dc;
+}
+.accueil div h2 {
+  margin: 0;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+.accueil div p {
+  font-size: 15px;
+  font-weight: 300;
+  padding-bottom: 25px;
+}
+.accueil div a {
+  background: linear-gradient(to top left, #9356dc, #ff79da);
+  height: 50px;
+  width: 220px;
+  border-radius: 25px;
+  box-shadow: 2px 2px 10px #9a9c9c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.fonctionnement {
+  padding-bottom: 40px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fonctionnement .title_fonctionnement {
+  padding: 30px 0px 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.fonctionnement p {
+  font-weight: bold;
+}
+.fonctionnement div {
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  padding: 25px 20px 20px 5px;
+  margin: 10px 20px 20px 30px;
+  box-shadow: 3px 3px 12px #dfd8d8;
+  width: 50%;
+}
+.fonctionnement div i {
+  font-size: 20px;
+  color: gray;
+  padding: 0 25px 0 30px;
+}
+.fonctionnement div .fa-house {
+  color: #9356dc;
+}
+.fonctionnement div span {
+  position: absolute;
+  left: -12px;
+  background-color: #9356dc;
+  border-radius: 20px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.fonctionnement .fonctionnement_select {
+  background-color: #efe8f8;
+}
+
+.restaurant {
+  background-color: #f6f6f6;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.restaurant .title_restaurant {
+  padding: 50px 0px 20px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.section_card_restaurant {
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
+  margin: 0 5%;
+}
+
+.card-restaurant {
+  margin: 0 10px;
+  border-radius: 15px;
+  background-color: white;
+  overflow: hidden;
+  width: 50%;
+  box-shadow: 2px 2px 10px #bdbebe;
+  margin-bottom: 20px;
+}
+.card-restaurant a {
+  text-decoration: none;
+}
+.card-restaurant .card-image-restaurant {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-restaurant .card-image-restaurant img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+}
+.card-restaurant .card-image-restaurant .encart_nouveau {
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  right: 15px;
+  color: #239b7e;
+  background-color: #99e2d0;
+  border-radius: 3px;
+  padding: 7px 12px;
+  font-weight: bold;
+}
+.card-restaurant .card-body-restaurant {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 12px;
+}
+.card-restaurant .card-body-restaurant .card-title-restaurant {
+  color: black;
+}
+.card-restaurant .card-body-restaurant .card-title-restaurant h3 {
+  margin: 0;
+  padding-bottom: 5px;
+}
+.card-restaurant .card-body-restaurant .card-title-restaurant p {
+  font-size: 16px;
+}
+.card-restaurant .card-body-restaurant .card-like-restaurant {
+  margin-right: 10px;
+}
+.card-restaurant .card-body-restaurant .card-like-restaurant i {
+  font-size: 25px;
+  color: gray;
+}
+
+footer {
+  background-color: #353434;
+  color: white;
+  padding: 10px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer div h3 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1em;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+footer nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+footer nav ul li {
+  display: flex;
+  flex-direction: row;
+  padding: 6px 0px;
+  font-size: 16px;
+  font-weight: 300;
+}
+footer nav ul li i {
+  width: 16px;
+  height: 16px;
+  padding-right: 12px;
+}
+footer nav ul li p {
+  margin: 0;
+}
+footer nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/*# sourceMappingURL=desktop_tablette_menu_resolution.css.map */
