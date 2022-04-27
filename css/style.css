@@ -204,9 +204,23 @@ header img {
 .card-restaurant .card-body-restaurant .card-like-restaurant {
   margin-right: 10px;
 }
-.card-restaurant .card-body-restaurant .card-like-restaurant i {
+.card-restaurant .card-body-restaurant .card-like-restaurant .like_animation {
   font-size: 25px;
   color: gray;
+}
+.card-restaurant .card-body-restaurant .card-like-restaurant .like_animation_up {
+  font-size: 25px;
+  display: none;
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-like-restaurant:active .like_animation {
+  display: none;
+}
+.card-like-restaurant:active .like_animation_up {
+  display: block !important;
 }
 
 footer {

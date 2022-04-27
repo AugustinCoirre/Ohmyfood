@@ -231,11 +231,29 @@ header {
     }
     .card-like-restaurant {
       margin-right: 10px;
-      i {
+      .like_animation {
         font-size: 25px;
         color: gray;
       }
+      .like_animation_up {
+        font-size: 25px;
+        display: none;
+        background: -webkit-linear-gradient($colorprimaire, $colorsecondaire);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     }
+  }
+}
+
+// animation like
+
+.card-like-restaurant:active {
+  .like_animation {
+    display: none;
+  }
+  .like_animation_up {
+    display: block !important;
   }
 }
 
