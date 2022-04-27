@@ -156,6 +156,15 @@ header {
   }
 }
 
+// animation btn survol
+
+.section_commander_menu {
+  a:hover {
+    opacity: 0.75;
+    box-shadow: 5px 5px 20px #9a9c9c;
+  }
+}
+
 // footer
 
 footer {
