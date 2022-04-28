@@ -86,7 +86,7 @@ header img {
   opacity: 0;
   z-index: -1;
   transition: opacity 250ms, box-shadow 250ms;
-  background-color: #a16be0;
+  background: linear-gradient(to top left, #a16be0, #ff93e1);
   height: 50px;
   width: 220px;
   border-radius: 25px;
