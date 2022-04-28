@@ -90,11 +90,27 @@ header img {
   justify-content: center;
   font-weight: bold;
   font-size: 0.9em;
+  width: 100%;
 }
 .section_position i {
   width: 16px;
   height: 16px;
-  padding-right: 5px;
+  font-size: 18px;
+}
+.section_position .input-position {
+  outline: none;
+  border: none;
+  background-color: #eaeaea;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 10px;
+}
+.section_position .input-position::placeholder {
+  color: black;
+  opacity: 1;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .entete-desktop {

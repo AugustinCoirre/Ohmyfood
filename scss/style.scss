@@ -69,9 +69,11 @@ $colorbackgroundsection: #f6f6f6;
   }
   99% {
     opacity: 1;
+    transform: scale(1);
   }
   100% {
     opacity: 0;
+    transform: scale(0);
   }
 }
 
@@ -106,10 +108,27 @@ header {
   justify-content: center;
   font-weight: bold;
   font-size: 0.9em;
+  width: 100%;
   i {
     width: 16px;
     height: 16px;
-    padding-right: 5px;
+    font-size: 18px;
+    margin-left: 15%;
+  }
+  .input-position {
+    outline: none;
+    border: none;
+    background-color: #eaeaea;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  .input-position::placeholder {
+    color: black;
+    opacity: 1;
+    font-weight: bold;
+    font-size: 18px;
   }
 }
 
