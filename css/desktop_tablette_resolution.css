@@ -316,8 +316,22 @@ header img {
 }
 .card-like-restaurant:hover .like_animation_up {
   display: block !important;
+  animation: like_animation 1s;
 }
 
+@keyframes like_animation {
+  0% {
+    opacity: 0.1;
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 footer {
   background-color: #353434;
   color: white;

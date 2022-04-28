@@ -1,8 +1,6 @@
 // Importation librairie - roboto light/regular/bold - Shrikhand
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
 
-// @import url(scss/animation);
-
 html {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
@@ -340,15 +338,31 @@ header {
 
 // animation like
 
-.card-like-restaurant:active {
+.card-like-restaurant:hover {
   .like_animation {
     display: none;
   }
   .like_animation_up {
     display: block !important;
+    animation: like_animation 1s;
   }
 }
 
+// keyframe animation like
+
+@keyframes like_animation {
+  0% {
+    opacity: 0.1;
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 // footer
 
 footer {

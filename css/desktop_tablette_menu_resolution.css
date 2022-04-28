@@ -81,6 +81,13 @@ header a i {
   font-size: 20px;
   padding-right: 15px;
 }
+.menu .title_restaurant_menu .like_animation_up {
+  font-size: 20px;
+  display: none;
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .menu h4 {
   font-weight: 400;
   padding-bottom: 5px;
@@ -129,6 +136,27 @@ header a i {
   width: 10%;
 }
 
+.like-container:hover .like_animation {
+  display: none;
+}
+.like-container:hover .like_animation_up {
+  display: block !important;
+  animation: like_animation 1s;
+}
+
+@keyframes like_animation {
+  0% {
+    opacity: 0.1;
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .section_commander_menu {
   background-color: #f6f6f6;
   width: 100%;
