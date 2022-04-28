@@ -63,6 +63,8 @@ header img {
   padding-bottom: 25px;
 }
 .accueil div a {
+  position: relative;
+  z-index: 1;
   background: linear-gradient(to top left, #9356dc, #ff79da);
   height: 50px;
   width: 220px;
@@ -74,9 +76,30 @@ header img {
   text-decoration: none;
   color: white;
 }
+.accueil div a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms, box-shadow 250ms;
+  background-color: #a16be0;
+  height: 50px;
+  width: 220px;
+  border-radius: 25px;
+  box-shadow: 2px 2px 10px #9a9c9c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
 
-.accueil a:hover {
-  opacity: 0.75;
+.accueil a:hover::after {
+  opacity: 1;
   box-shadow: 5px 5px 20px #9a9c9c;
 }
 
