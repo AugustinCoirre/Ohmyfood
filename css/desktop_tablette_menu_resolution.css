@@ -78,11 +78,11 @@ header a i {
 .menu .title_restaurant_menu i {
   color: black;
   margin: 15px;
-  font-size: 20px;
+  font-size: 25px;
   padding-right: 15px;
 }
 .menu .title_restaurant_menu .like_animation_up {
-  font-size: 20px;
+  font-size: 25px;
   display: none;
   background: -webkit-linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
