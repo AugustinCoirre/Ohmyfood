@@ -113,12 +113,14 @@ header {
       border-radius: 15px;
       display: flex;
       justify-content: space-between;
-      align-items: flex-end;
-      padding: 12px;
+      padding: 12px 0 12px 12px;
       margin-bottom: 15px;
       box-shadow: 2px 2px 10px #dadbdb;
       width: 85%;
       animation: apparition 1.5s forwards;
+      .check_menu {
+        display: none;
+      }
       div {
         width: 90%;
       }
@@ -133,20 +135,51 @@ header {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        width: 90%;
       }
       .price_menu {
         font-weight: bold;
         width: 10%;
+        margin-right: 15px;
+        align-self: flex-end;
       }
-      &:nth-child(0n + 3) {
+    }
+    .menu_entre {
+      &:nth-child(3) {
         animation-delay: 0.2s;
       }
-      &:nth-child(0n + 4) {
+      &:nth-child(4) {
         animation-delay: 0.4s;
       }
-      &:nth-child(0n + 5) {
+      &:nth-child(5) {
         animation-delay: 0.6s;
+      }
+    }
+    .menu_plat {
+      &:nth-child(2) {
+        animation-delay: 0.8s;
+      }
+      &:nth-child(3) {
+        animation-delay: 1s;
+      }
+      &:nth-child(4) {
+        animation-delay: 1.2s;
+      }
+      &:nth-child(5) {
+        animation-delay: 1.4s;
+      }
+    }
+    .menu_dessert {
+      &:nth-child(2) {
+        animation-delay: 1.4s;
+      }
+      &:nth-child(3) {
+        animation-delay: 1.6s;
+      }
+      &:nth-child(4) {
+        animation-delay: 1.8s;
+      }
+      &:nth-child(5) {
+        animation-delay: 2s;
       }
     }
   }
@@ -157,7 +190,10 @@ header {
 @keyframes apparition {
   0% {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(15px);
+  }
+  80% {
+    opacity: 1;
   }
   100% {
     opacity: 1;
@@ -182,14 +218,9 @@ header {
 @keyframes like_animation {
   0% {
     opacity: 0.1;
-    transform: translateY(-5px);
-  }
-  50% {
-    transform: translateY(5px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0px);
   }
 }
 
