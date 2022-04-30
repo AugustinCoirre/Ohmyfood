@@ -91,7 +91,6 @@ header a i {
 .menu .element_menu {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 .menu .element_menu .choice_menu {
@@ -103,31 +102,37 @@ header a i {
   padding: 12px 0 12px 12px;
   margin-bottom: 15px;
   box-shadow: 2px 2px 10px #dadbdb;
-  width: 85%;
+  width: 90%;
   animation: apparition 1.5s forwards;
 }
-.menu .element_menu .choice_menu .check_menu {
-  display: none;
+.menu .element_menu .choice_menu .container_menu {
+  overflow: hidden;
 }
-.menu .element_menu .choice_menu div {
-  width: 90%;
-}
-.menu .element_menu .choice_menu .title_menu {
+.menu .element_menu .choice_menu .container_menu .title_menu {
   font-weight: bold;
   padding-bottom: 5px;
   font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.menu .element_menu .choice_menu p {
+.menu .element_menu .choice_menu .container_menu .subtitle_menu {
   font-weight: lighter;
   font-size: 14px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.menu .element_menu .choice_menu .price_menu {
+.menu .element_menu .choice_menu .container_prix {
+  display: flex;
+}
+.menu .element_menu .choice_menu .container_prix .check_menu {
+  display: none;
+}
+.menu .element_menu .choice_menu .container_prix .price_menu {
   font-weight: bold;
-  width: 10%;
   margin-right: 15px;
+  margin-left: 10px;
   align-self: flex-end;
 }
 .menu .element_menu .menu_entre:nth-child(3) {

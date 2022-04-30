@@ -120,8 +120,8 @@ header {
     .choice_menu {
       opacity: 0;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
       overflow: hidden;
       background-color: white;
       border-radius: 15px;
@@ -132,8 +132,12 @@ header {
       height: 64px;
       min-width: 300px;
       animation: apparition 1.5s forwards;
+      .container_prix {
+        display: flex;
+        flex-direction: row;
+      }
       .container_menu {
-        width: 90%;
+        overflow: hidden;
       }
       .title_menu {
         font-weight: bold;
@@ -152,12 +156,9 @@ header {
       }
       .price_menu {
         font-weight: bold;
-        width: 10%;
         align-self: flex-end;
         text-align: center;
         padding: 33px 20px 12px 10px;
-        transform: translateX(0);
-        transition: transform 2s;
       }
       .check_menu {
         position: relative;
@@ -167,19 +168,15 @@ header {
         background-color: $colortertiaire;
         padding: 21px 0;
         width: 60px;
-        transform: translateX(0);
-        transition: transform 2s;
+        transition: margin-right 2s;
         i {
           color: white;
           font-size: 22px;
         }
       }
       &:hover {
-        .price_menu {
-          transform: translateX(-60px);
-        }
         .check_menu {
-          transform: translateX(-60px);
+          margin-right: -12px;
           i {
             animation: rotate-check 2s;
           }

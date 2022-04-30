@@ -105,8 +105,8 @@ header a i {
 .menu .element_menu .choice_menu {
   opacity: 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   overflow: hidden;
   background-color: white;
   border-radius: 15px;
@@ -118,8 +118,12 @@ header a i {
   min-width: 300px;
   animation: apparition 1.5s forwards;
 }
+.menu .element_menu .choice_menu .container_prix {
+  display: flex;
+  flex-direction: row;
+}
 .menu .element_menu .choice_menu .container_menu {
-  width: 90%;
+  overflow: hidden;
 }
 .menu .element_menu .choice_menu .title_menu {
   font-weight: bold;
@@ -138,12 +142,9 @@ header a i {
 }
 .menu .element_menu .choice_menu .price_menu {
   font-weight: bold;
-  width: 10%;
   align-self: flex-end;
   text-align: center;
   padding: 33px 20px 12px 10px;
-  transform: translateX(0);
-  transition: transform 2s;
 }
 .menu .element_menu .choice_menu .check_menu {
   position: relative;
@@ -153,18 +154,14 @@ header a i {
   background-color: #99e2d0;
   padding: 21px 0;
   width: 60px;
-  transform: translateX(0);
-  transition: transform 2s;
+  transition: margin-right 2s;
 }
 .menu .element_menu .choice_menu .check_menu i {
   color: white;
   font-size: 22px;
 }
-.menu .element_menu .choice_menu:hover .price_menu {
-  transform: translateX(-60px);
-}
 .menu .element_menu .choice_menu:hover .check_menu {
-  transform: translateX(-60px);
+  margin-right: -12px;
 }
 .menu .element_menu .choice_menu:hover .check_menu i {
   animation: rotate-check 2s;
