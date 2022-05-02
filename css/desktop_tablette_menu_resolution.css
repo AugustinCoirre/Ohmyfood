@@ -154,7 +154,7 @@ header a i {
   background-color: #99e2d0;
   padding: 21px 0;
   width: 60px;
-  transition: margin-right 2s;
+  transition: margin-right 1s;
 }
 .menu .element_menu .choice_menu .check_menu i {
   color: white;
@@ -164,7 +164,7 @@ header a i {
   margin-right: -12px;
 }
 .menu .element_menu .choice_menu:hover .check_menu i {
-  animation: rotate-check 2s;
+  animation: rotate-check 1s;
 }
 .menu .element_menu .menu_entre:nth-child(3) {
   animation-delay: 0.2s;

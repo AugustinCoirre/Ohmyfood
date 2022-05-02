@@ -168,7 +168,7 @@ header {
         background-color: $colortertiaire;
         padding: 21px 0;
         width: 60px;
-        transition: margin-right 2s;
+        transition: margin-right 1s;
         i {
           color: white;
           font-size: 22px;
@@ -178,7 +178,7 @@ header {
         .check_menu {
           margin-right: -12px;
           i {
-            animation: rotate-check 2s;
+            animation: rotate-check 1s;
           }
         }
       }
