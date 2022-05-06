@@ -107,44 +107,67 @@ header {
     flex-direction: column;
     align-items: center;
     .choice_menu {
-      background-color: white;
       opacity: 0;
-      border-radius: 15px;
       display: flex;
+      align-items: center;
       justify-content: space-between;
-      padding: 12px 0 12px 12px;
+      overflow: hidden;
+      background-color: white;
+      border-radius: 15px;
       margin-bottom: 15px;
+      padding: 0px 12px;
       box-shadow: 2px 2px 10px #dadbdb;
-      width: 90%;
+      width: 85%;
+      height: 64px;
       animation: apparition 1.5s forwards;
-      .container_menu {
-        overflow: hidden;
-        .title_menu {
-          font-weight: bold;
-          padding-bottom: 5px;
-          font-size: 16px;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-        }
-        .subtitle_menu {
-          font-weight: lighter;
-          font-size: 14px;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-        }
-      }
       .container_prix {
         display: flex;
-        .check_menu {
-          display: none;
+        flex-direction: row;
+      }
+      .container_menu {
+        overflow: hidden;
+      }
+      .title_menu {
+        font-weight: bold;
+        padding-bottom: 5px;
+        font-size: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .subtitle_menu {
+        font-weight: lighter;
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .price_menu {
+        font-weight: bold;
+        align-self: flex-end;
+        text-align: center;
+        padding: 33px 20px 12px 10px;
+      }
+      .check_menu {
+        position: relative;
+        margin-right: -72px;
+        display: flex;
+        justify-content: center;
+        background-color: $colortertiaire;
+        padding: 21px 0;
+        width: 60px;
+        transition: margin-right 1s;
+        i {
+          color: white;
+          font-size: 22px;
         }
-        .price_menu {
-          font-weight: bold;
-          margin-right: 15px;
-          margin-left: 10px;
-          align-self: flex-end;
+      }
+      &:hover {
+        .check_menu {
+          margin-right: -12px;
+          i {
+            animation: rotate-check 1s;
+          }
         }
       }
     }
@@ -187,6 +210,33 @@ header {
         animation-delay: 2s;
       }
     }
+  }
+}
+
+// animation check menu
+
+@keyframes rotate-check {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+// animation keyframes menu apparition
+
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 

@@ -94,21 +94,28 @@ header a i {
   align-items: center;
 }
 .menu .element_menu .choice_menu {
-  background-color: white;
   opacity: 0;
-  border-radius: 15px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 12px 0 12px 12px;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 15px;
   margin-bottom: 15px;
+  padding: 0px 12px;
   box-shadow: 2px 2px 10px #dadbdb;
-  width: 90%;
+  width: 85%;
+  height: 64px;
   animation: apparition 1.5s forwards;
+}
+.menu .element_menu .choice_menu .container_prix {
+  display: flex;
+  flex-direction: row;
 }
 .menu .element_menu .choice_menu .container_menu {
   overflow: hidden;
 }
-.menu .element_menu .choice_menu .container_menu .title_menu {
+.menu .element_menu .choice_menu .title_menu {
   font-weight: bold;
   padding-bottom: 5px;
   font-size: 16px;
@@ -116,24 +123,38 @@ header a i {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.menu .element_menu .choice_menu .container_menu .subtitle_menu {
+.menu .element_menu .choice_menu .subtitle_menu {
   font-weight: lighter;
   font-size: 14px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.menu .element_menu .choice_menu .container_prix {
-  display: flex;
-}
-.menu .element_menu .choice_menu .container_prix .check_menu {
-  display: none;
-}
-.menu .element_menu .choice_menu .container_prix .price_menu {
+.menu .element_menu .choice_menu .price_menu {
   font-weight: bold;
-  margin-right: 15px;
-  margin-left: 10px;
   align-self: flex-end;
+  text-align: center;
+  padding: 33px 20px 12px 10px;
+}
+.menu .element_menu .choice_menu .check_menu {
+  position: relative;
+  margin-right: -72px;
+  display: flex;
+  justify-content: center;
+  background-color: #99e2d0;
+  padding: 21px 0;
+  width: 60px;
+  transition: margin-right 1s;
+}
+.menu .element_menu .choice_menu .check_menu i {
+  color: white;
+  font-size: 22px;
+}
+.menu .element_menu .choice_menu:hover .check_menu {
+  margin-right: -12px;
+}
+.menu .element_menu .choice_menu:hover .check_menu i {
+  animation: rotate-check 1s;
 }
 .menu .element_menu .menu_entre:nth-child(3) {
   animation-delay: 0.2s;
@@ -169,6 +190,27 @@ header a i {
   animation-delay: 2s;
 }
 
+@keyframes rotate-check {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 @keyframes apparition {
   0% {
     opacity: 0;
