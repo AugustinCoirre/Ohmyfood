@@ -259,6 +259,7 @@ header img {
   justify-content: space-evenly;
   padding-bottom: 40px;
   width: 90%;
+  gap: 15px;
 }
 
 .card-restaurant {
