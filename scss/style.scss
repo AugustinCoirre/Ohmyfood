@@ -349,6 +349,7 @@ header {
         display: none;
         background: -webkit-linear-gradient($colorprimaire, $colorsecondaire);
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
       }
     }
